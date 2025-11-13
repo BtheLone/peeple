@@ -1,0 +1,39 @@
+<header>
+  <div class="top">
+    <img src="https://via.placeholder.com/50" alt="Peeple Logo">
+    <h1>Peeple</h1>
+  </div>
+  <div class="subtitle">Create groups, set passwords, chat with profile pics, emojis, and view top groups!</div>
+</header>
+
+<main>
+  <!-- Groups Panel -->
+  <div class="panel" id="groups">
+    <h2>Groups</h2>
+    <input id="groupName" placeholder="Group Name">
+    <input id="groupPass" placeholder="Password">
+    <button onclick="createGroup()">Create Group</button>
+    <hr style="border-color:#333;">
+    <input id="joinName" placeholder="Group ID">
+    <input id="joinPass" placeholder="Password">
+    <input id="chatName" placeholder="Display Name">
+    <input id="chatColor" type="color" value="#4b6cb7">
+    <button onclick="joinGroup()">Join Group</button>
+  </div>
+
+  <!-- Chat Panel -->
+  <div class="panel" id="chat">
+    <h2>Chat</h2>
+    <div id="emojiPicker" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+    <div id="chatMessages"></div>
+    <input id="chatInput" placeholder="Type your message...">
+    <input id="chatPhoto" placeholder="Profile Image URL (optional)">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <!-- Leaderboard Panel -->
+  <div class="panel" id="leaderboard">
+    <h2>Leaderboard</h2>
+    <div id="leaderboardList">Loading...</div>
+  </div>
+</main>
